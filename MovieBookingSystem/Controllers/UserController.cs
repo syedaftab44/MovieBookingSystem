@@ -56,6 +56,7 @@ namespace MovieBookingSystem.Controllers
         public async Task<IActionResult> GetAllBookings(long userId, long theaterId)
         {
             // Check if the user with the specified ID exists in the Bookings table
+            //git update check
             if (!movieContext.Users.Any(u => u.Id == userId))
             {
                 throw new Exception("Invalid user");
